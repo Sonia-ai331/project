@@ -52,6 +52,3 @@ for card_url in get_url_news():
         new = new.text
         new = spaces(new)
         new = split_link(new)
-    print(day)
-    print(title)
-    print(new)
