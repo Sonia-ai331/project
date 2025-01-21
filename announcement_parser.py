@@ -52,7 +52,3 @@ for card_url in get_url():
         ann = ann.text
         ann = spaces(ann)
         split_link(ann)
-    print(day)
-    print(title)
-    print(ann)
-    print()
