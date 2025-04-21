@@ -173,7 +173,7 @@ def show_announcements(message):
 def handle_references(message):
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     btn2 = types.KeyboardButton("Об обучении")
-    back = types.KeyboardButton("Вернуться в главное меню")
+    back = types.KeyboardButton("Главное меню")
     markup.add(btn2, back)
     bot.send_message(message.chat.id, text="...", reply_markup=markup)
 
@@ -186,7 +186,7 @@ def handle_schedules(message):
     btn4 = types.KeyboardButton("Звонки")
     btn5 = types.KeyboardButton("Внеурочная деятельность")
     back = types.KeyboardButton("Каникулы")
-    abc = types.KeyboardButton("Вернуться в главное меню")
+    abc = types.KeyboardButton("Главное меню")
     markup.add(btn1, btn2, btn3, btn4, btn5, back, abc)
     bot.send_message(message.chat.id, text="...", reply_markup=markup)
 
@@ -196,7 +196,7 @@ def handle_extracurricular(message):
     btn1 = types.KeyboardButton("1-4 классы")
     btn2 = types.KeyboardButton("5-9 классы")
     btn3 = types.KeyboardButton("9-11 классы")
-    back = types.KeyboardButton("Вернуться в главное меню")
+    back = types.KeyboardButton("Главное меню")
     markup.add(btn1, btn2, btn3, back)
     bot.send_message(message.chat.id, text="...", reply_markup=markup)
 
@@ -234,7 +234,7 @@ def handle_metro_benefits(message):
         bot.send_document(chat_id, file)
 
 # Обработчик возврата в главное меню
-@bot.message_handler(func=lambda message: message.text == "Вернуться в главное меню")
+@bot.message_handler(func=lambda message: message.text == "Главное меню")
 def back_to_main(message):
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     button2 = types.KeyboardButton("Справки")
@@ -260,7 +260,7 @@ def one_to_four(message):
     button10 = types.KeyboardButton("2В")
     button11 = types.KeyboardButton("3В")
     button12 = types.KeyboardButton("4В")
-    back = types.KeyboardButton("Вернуться в главное меню")
+    back = types.KeyboardButton("Главное меню")
     markup.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11, button12, back)
     bot.send_message(message.chat.id, text="...", reply_markup=markup)
 
@@ -278,7 +278,7 @@ def five_to_eight(message):
         button9 = types.KeyboardButton("5В")
         button10 = types.KeyboardButton("6В")
         button11 = types.KeyboardButton("7В")
-        back = types.KeyboardButton("Вернуться в главное меню")
+        back = types.KeyboardButton("Главное меню")
         markup.add(button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11, back)
         bot.send_message(message.chat.id, text="...", reply_markup=markup)
 
@@ -310,7 +310,7 @@ def nine_to_eleven(message):
     button5 = types.KeyboardButton("9Б")
     button6 = types.KeyboardButton("10Б")
     button7 = types.KeyboardButton("11Б")
-    back = types.KeyboardButton("Вернуться в главное меню")
+    back = types.KeyboardButton("Главное меню")
     markup.add(button1, button2, button3, button5, button6, button7, back)
     bot.send_message(message.chat.id, text="...", reply_markup=markup)
 
