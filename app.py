@@ -28,7 +28,7 @@ CLASS_SCHEDULES = {
     "6Б": "https://imgur.com/TrnbFHl",
     "7В": "https://imgur.com/TqBeJwY",
     "5В": "https://imgur.com/KjweW0I",
-    "6А": "https://imgur.com/undefined",
+    "6А": "https://imgur.com/ES7hbLG",
     "7Б": "https://imgur.com/ejTEzy5",
     "5Б": "https://imgur.com/DVEvnyY",
     "6В": "https://imgur.com/OTsJkUl",
