@@ -322,8 +322,6 @@ def handle_class_schedule(message):
         bot.send_photo(message.chat.id, photo_url)
     else:
         bot.send_message(message.chat.id, "Извините, расписание временно недоступно")
-# Запуск бота
-bot.polling(non_stop=True)
 
 # Роут для проверки работы
 @app.route('/')
